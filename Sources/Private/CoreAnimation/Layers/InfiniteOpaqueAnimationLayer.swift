@@ -1,6 +1,6 @@
 // Created by Cal Stephens on 10/10/22.
 // Copyright © 2022 Airbnb Inc. All rights reserved.
-
+#if !os(watchOS)
 import QuartzCore
 
 // MARK: - ExpandedAnimationLayer
@@ -54,3 +54,4 @@ final class InfiniteOpaqueAnimationLayer: BaseAnimationLayer {
   private let additionalPaddingLayer = CALayer()
 
 }
+#endif

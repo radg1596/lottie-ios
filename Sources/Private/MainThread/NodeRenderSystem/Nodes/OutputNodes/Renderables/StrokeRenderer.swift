@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/30/19.
 //
-
+#if !os(watchOS)
 import Foundation
 import QuartzCore
 
@@ -164,3 +164,4 @@ final class StrokeRenderer: PassThroughOutputNode, Renderable {
     }
   }
 }
+#endif

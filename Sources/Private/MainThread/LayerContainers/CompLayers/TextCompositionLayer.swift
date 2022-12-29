@@ -4,11 +4,12 @@
 //
 //  Created by Brandon Withrow on 1/25/19.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 import CoreText
 import Foundation
 import QuartzCore
+#endif
 
 /// Needed for NSMutableParagraphStyle...
 #if os(OSX)
@@ -17,6 +18,7 @@ import AppKit
 import UIKit
 #endif
 
+#if !os(watchOS)
 extension TextJustification {
   var textAlignment: NSTextAlignment {
     switch self {
@@ -147,3 +149,4 @@ final class TextCompositionLayer: CompositionLayer {
     textLayer.contentsScale = renderScale
   }
 }
+#endif

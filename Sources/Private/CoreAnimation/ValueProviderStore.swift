@@ -1,6 +1,6 @@
 // Created by Cal Stephens on 1/13/22.
 // Copyright © 2022 Airbnb Inc. All rights reserved.
-
+#if !os(watchOS)
 import QuartzCore
 
 // MARK: - ValueProviderStore
@@ -136,3 +136,4 @@ extension AnimationKeypath {
     return fullPath.range(of: regex, options: .regularExpression) != nil
   }
 }
+#endif

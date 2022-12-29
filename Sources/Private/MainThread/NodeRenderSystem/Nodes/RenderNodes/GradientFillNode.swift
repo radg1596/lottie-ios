@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/22/19.
 //
-
+#if !os(watchOS)
 import Foundation
 import QuartzCore
 
@@ -103,3 +103,4 @@ final class GradientFillNode: AnimatorNode, RenderNode {
     fillRender.fillRule = fillProperties.fillRule.caFillRule
   }
 }
+#endif

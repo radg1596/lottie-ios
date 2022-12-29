@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/22/19.
 //
-
+#if !os(watchOS)
 import Foundation
 import QuartzCore
 
@@ -159,3 +159,4 @@ class CompositionLayer: CALayer, KeypathSearchable {
 protocol CompositionLayerDelegate: AnyObject {
   func frameUpdated(frame: CGFloat)
 }
+#endif

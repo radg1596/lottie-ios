@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/22/19.
 //
-
+#if !os(watchOS)
 import Foundation
 import QuartzCore
 
@@ -178,3 +178,4 @@ extension Array where Element == CGFloat {
     !allSatisfy { $0 == 0.01 }
   }
 }
+#endif

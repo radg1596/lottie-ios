@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/21/19.
 //
-
+#if !os(watchOS)
 import Foundation
 import QuartzCore
 
@@ -220,3 +220,4 @@ extension BezierPath {
     return path
   }
 }
+#endif

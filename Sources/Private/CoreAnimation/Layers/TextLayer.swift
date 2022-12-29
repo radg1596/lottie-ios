@@ -1,6 +1,7 @@
 // Created by Cal Stephens on 2/9/22.
 // Copyright © 2022 Airbnb Inc. All rights reserved.
 
+#if !os(watchOS)
 import QuartzCore
 
 /// The `CALayer` type responsible for rendering `TextLayer`s
@@ -103,3 +104,4 @@ final class TextLayer: BaseCompositionLayer {
   }
 
 }
+#endif

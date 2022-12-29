@@ -1,6 +1,6 @@
 // Created by Cal Stephens on 1/7/22.
 // Copyright © 2022 Airbnb Inc. All rights reserved.
-
+#if !os(watchOS)
 import QuartzCore
 
 extension CGColor {
@@ -23,3 +23,4 @@ extension CGColor {
       components: [red, green, blue, alpha])!
   }
 }
+#endif

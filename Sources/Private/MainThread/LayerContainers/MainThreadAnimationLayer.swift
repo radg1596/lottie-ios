@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/24/19.
 //
-
+#if !os(watchOS)
 import Foundation
 import QuartzCore
 
@@ -275,3 +275,4 @@ private class BlankImageProvider: AnimationImageProvider {
     nil
   }
 }
+#endif

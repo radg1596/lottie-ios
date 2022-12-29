@@ -1,6 +1,6 @@
 // Created by Cal Stephens on 1/27/22.
 // Copyright © 2022 Airbnb Inc. All rights reserved.
-
+#if !os(watchOS)
 import QuartzCore
 
 /// A base `CALayer` that manages the frame and animations
@@ -31,3 +31,4 @@ class BaseAnimationLayer: CALayer, AnimationLayer {
   }
 
 }
+#endif

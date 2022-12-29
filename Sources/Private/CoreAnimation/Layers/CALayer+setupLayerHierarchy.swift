@@ -1,6 +1,6 @@
 // Created by Cal Stephens on 1/11/22.
 // Copyright © 2022 Airbnb Inc. All rights reserved.
-
+#if !os(watchOS)
 import QuartzCore
 
 extension CALayer {
@@ -167,3 +167,4 @@ extension Collection where Element == LayerModel {
     return layersAndMasks
   }
 }
+#endif

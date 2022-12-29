@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/15/19.
 //
-
+#if !os(watchOS)
 import Foundation
 import QuartzCore
 
@@ -196,3 +196,4 @@ extension AnimatorNode {
   }
 
 }
+#endif

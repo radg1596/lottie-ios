@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/25/19.
 //
-
+#if !os(watchOS)
 import Foundation
 import QuartzCore
 
@@ -55,3 +55,4 @@ final class SolidCompositionLayer: CompositionLayer {
     solidShape.fillColor = colorProperty.value.cgColorValue
   }
 }
+#endif

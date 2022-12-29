@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/25/19.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 import Foundation
 import QuartzCore
@@ -48,3 +48,4 @@ final class ImageCompositionLayer: CompositionLayer {
     }
   }
 }
+#endif

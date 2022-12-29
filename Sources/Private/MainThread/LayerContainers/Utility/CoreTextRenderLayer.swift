@@ -4,11 +4,12 @@
 //
 //  Created by Brandon Withrow on 8/3/20.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 import CoreText
 import Foundation
 import QuartzCore
+#endif
 /// Needed for NSMutableParagraphStyle...
 #if os(OSX)
 import AppKit
@@ -17,7 +18,7 @@ import UIKit
 #endif
 
 // MARK: - CoreTextRenderLayer
-
+#if !os(watchOS)
 /// A CALayer subclass that renders text content using CoreText
 final class CoreTextRenderLayer: CALayer {
 
@@ -347,3 +348,4 @@ extension CGContext {
     }
   }
 }
+#endif
