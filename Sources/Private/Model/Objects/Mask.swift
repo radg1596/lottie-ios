@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/8/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 // MARK: - MaskMode
@@ -80,3 +80,4 @@ final class Mask: Codable, DictionaryInitializable {
 
   let expansion: KeyframeGroup<LottieVector1D>
 }
+#endif

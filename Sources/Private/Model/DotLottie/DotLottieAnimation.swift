@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+#if !os(watchOS)
 struct DotLottieAnimation: Codable {
   /// Id of Animation
   var id: String
@@ -47,3 +47,4 @@ struct DotLottieAnimation: Codable {
   }
 
 }
+#endif

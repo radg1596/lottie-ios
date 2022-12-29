@@ -2,7 +2,7 @@
 // Copyright © 2022 Airbnb Inc. All rights reserved.
 
 // MARK: - Keyframes
-
+#if !os(watchOS)
 enum Keyframes {
 
   // MARK: Internal
@@ -223,3 +223,4 @@ extension KeyframeGroup {
     }
   }
 }
+#endif

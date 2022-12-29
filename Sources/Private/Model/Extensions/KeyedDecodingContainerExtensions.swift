@@ -1,5 +1,5 @@
 // From: https://medium.com/@kewindannerfjordremeczki/swift-4-0-decodable-heterogeneous-collections-ecc0e6b468cf
-
+#if !os(watchOS)
 import Foundation
 
 // MARK: - ClassFamily
@@ -42,3 +42,4 @@ extension KeyedDecodingContainer {
     return list
   }
 }
+#endif

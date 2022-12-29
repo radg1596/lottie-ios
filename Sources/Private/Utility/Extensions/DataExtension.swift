@@ -12,6 +12,7 @@ import UIKit
 import AppKit
 #endif
 
+#if !os(watchOS)
 extension Data {
 
   static func jsonData(from assetName: String, in bundle: Bundle) -> Data? {
@@ -25,3 +26,4 @@ extension Data {
     #endif
   }
 }
+#endif

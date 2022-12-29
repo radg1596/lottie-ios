@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/8/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 final class Rectangle: ShapeItem {
@@ -70,3 +70,4 @@ final class Rectangle: ShapeItem {
     case cornerRadius = "r"
   }
 }
+#endif

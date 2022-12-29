@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/30/19.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 import Foundation
 
@@ -53,3 +53,4 @@ class NodeProperty<T>: AnyNodeProperty {
 
   fileprivate var typedContainer: ValueContainer<T>
 }
+#endif

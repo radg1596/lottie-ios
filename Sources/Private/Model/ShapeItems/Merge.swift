@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/8/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 // MARK: - MergeMode
@@ -56,3 +56,4 @@ final class Merge: ShapeItem {
     case mode = "mm"
   }
 }
+#endif

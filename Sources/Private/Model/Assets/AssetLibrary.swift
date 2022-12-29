@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/9/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 final class AssetLibrary: Codable, AnyInitializable {
@@ -73,3 +73,4 @@ final class AssetLibrary: Codable, AnyInitializable {
     try container.encode(contentsOf: Array(assets.values))
   }
 }
+#endif

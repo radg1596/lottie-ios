@@ -5,7 +5,7 @@
 //  Created by Brandon Withrow on 8/5/20.
 //  Copyright © 2020 YurtvilleProds. All rights reserved.
 //
-
+#if !os(watchOS)
 import Foundation
 
 /// Connects a LottieFontProvider to a group of text layers
@@ -39,3 +39,4 @@ final class LayerFontProvider {
     }
   }
 }
+#endif

@@ -4,7 +4,7 @@
 //
 //  Created by Enrique Bermúdez on 10/27/19.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 import Foundation
 
@@ -121,3 +121,4 @@ public final class GradientValueProvider: ValueProvider {
     value = value(from: colors, locations: locations)
   }
 }
+#endif

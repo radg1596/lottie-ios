@@ -5,7 +5,7 @@
 //  Created by Brandon Withrow on 10/10/18.
 //
 // From https://github.com/buba447/UIToolBox
-
+#if !os(watchOS)
 import CoreGraphics
 import Foundation
 
@@ -448,3 +448,4 @@ extension CGPoint {
       y: y + point.y)
   }
 }
+#endif

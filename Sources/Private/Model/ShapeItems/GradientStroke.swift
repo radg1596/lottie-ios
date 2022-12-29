@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/8/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 // MARK: - LineCap
@@ -236,3 +236,4 @@ final class GradientStroke: ShapeItem {
     case colors = "k"
   }
 }
+#endif

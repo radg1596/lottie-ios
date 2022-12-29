@@ -2,7 +2,7 @@
 // Copyright © 2020 Airbnb Inc. All rights reserved.
 
 // MARK: - LottieLogger
-
+#if !os(watchOS)
 /// A shared logger that allows consumers to intercept Lottie assertions and warning messages to pipe
 /// into their own logging systems.
 public final class LottieLogger {
@@ -135,3 +135,4 @@ extension LottieLogger {
       })
   }
 }
+#endif

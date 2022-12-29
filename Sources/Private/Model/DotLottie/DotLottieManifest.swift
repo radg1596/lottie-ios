@@ -4,7 +4,7 @@
 //
 // Created by Evandro Harrison Hoffmann on 27/06/2020.
 //
-
+#if !os(watchOS)
 import Foundation
 
 /// Manifest model for .lottie File
@@ -51,3 +51,4 @@ struct DotLottieManifest: Codable {
   }
 
 }
+#endif

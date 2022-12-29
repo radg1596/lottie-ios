@@ -7,7 +7,7 @@
 //
 //  See https://github.com/weichsel/ZIPFoundation/blob/master/LICENSE for license information.
 //
-
+#if !os(watchOS)
 import Foundation
 
 extension FileManager {
@@ -128,3 +128,4 @@ extension URL {
     return standardized.absoluteString.hasPrefix(parentDirectoryURL.absoluteString)
   }
 }
+#endif

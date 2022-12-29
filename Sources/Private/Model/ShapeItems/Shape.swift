@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/8/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 /// An item that defines an custom shape
@@ -54,3 +54,4 @@ final class Shape: ShapeItem {
     case direction = "d"
   }
 }
+#endif

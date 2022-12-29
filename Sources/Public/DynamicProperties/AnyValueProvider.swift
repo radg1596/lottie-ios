@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/30/19.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 import Foundation
 
@@ -130,3 +130,4 @@ public enum AnyValueProviderStorage {
     }
   }
 }
+#endif

@@ -4,7 +4,7 @@
 //
 //  Created by Evandro Hoffmann on 20/10/22.
 //
-
+#if !os(watchOS)
 import Foundation
 
 extension DotLottieFile {
@@ -263,3 +263,4 @@ extension DotLottieFile {
   }
 
 }
+#endif

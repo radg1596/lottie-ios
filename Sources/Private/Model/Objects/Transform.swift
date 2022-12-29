@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/7/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 /// The animatable transform for a layer. Controls position, rotation, scale, and opacity.
@@ -181,3 +181,4 @@ final class Transform: Codable, DictionaryInitializable {
   /// Should always be nil.
   let rotationZ: KeyframeGroup<LottieVector1D>?
 }
+#endif

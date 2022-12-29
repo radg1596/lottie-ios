@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/9/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 /// A time marker
@@ -35,3 +35,4 @@ final class Marker: Codable, DictionaryInitializable {
   /// The duration of the marker, in frames.
   let durationFrameTime: AnimationFrameTime
 }
+#endif

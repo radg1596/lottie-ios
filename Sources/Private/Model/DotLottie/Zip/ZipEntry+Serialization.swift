@@ -7,7 +7,7 @@
 //
 //  See https://github.com/weichsel/ZIPFoundation/blob/master/LICENSE for license information.
 //
-
+#if !os(watchOS)
 import Foundation
 
 extension ZipEntry.LocalFileHeader {
@@ -187,3 +187,4 @@ extension ZipEntry.DataDescriptor {
     self.data = Data()
   }
 }
+#endif

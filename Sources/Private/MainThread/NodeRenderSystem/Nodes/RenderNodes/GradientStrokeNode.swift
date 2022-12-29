@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/23/19.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 import Foundation
 
@@ -149,3 +149,4 @@ final class GradientStrokeNode: AnimatorNode, RenderNode {
     }
   }
 }
+#endif

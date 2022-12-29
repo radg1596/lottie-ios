@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 2/4/19.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 import Foundation
 
@@ -68,3 +68,4 @@ public final class FloatValueProvider: ValueProvider {
 
   private var block: CGFloatValueBlock?
 }
+#endif

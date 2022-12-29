@@ -7,7 +7,7 @@
 //
 //  See https://github.com/weichsel/ZIPFoundation/blob/master/LICENSE for license information.
 //
-
+#if !os(watchOS)
 import Foundation
 
 // MARK: - ExtensibleDataField
@@ -177,3 +177,4 @@ extension ZipEntry.ZIP64ExtendedInformation {
     return nil
   }
 }
+#endif

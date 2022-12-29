@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/8/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 /// A layer that holds an image.
@@ -40,3 +40,4 @@ final class ImageLayerModel: LayerModel {
     case referenceID = "refId"
   }
 }
+#endif

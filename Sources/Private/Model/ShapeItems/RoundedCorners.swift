@@ -4,7 +4,7 @@
 //
 //  Created by Duolingo on 10/31/22.
 //
-
+#if !os(watchOS)
 import Foundation
 
 // MARK: - RoundedCorners
@@ -45,3 +45,4 @@ final class RoundedCorners: ShapeItem {
     case radius = "r"
   }
 }
+#endif

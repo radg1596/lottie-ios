@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/17/19.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 import Foundation
 
@@ -88,3 +88,4 @@ final class FillNode: AnimatorNode, RenderNode {
     fillRender.fillRule = fillProperties.type
   }
 }
+#endif

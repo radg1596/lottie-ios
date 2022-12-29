@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/30/19.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 import Foundation
 
@@ -88,3 +88,4 @@ class PathOutputNode: NodeOutput {
   }
 
 }
+#endif

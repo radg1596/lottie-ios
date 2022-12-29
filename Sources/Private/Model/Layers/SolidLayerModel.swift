@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/8/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 /// A layer that holds a solid color.
@@ -54,3 +54,4 @@ final class SolidLayerModel: LayerModel {
     case height = "sh"
   }
 }
+#endif

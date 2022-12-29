@@ -4,7 +4,7 @@
 //
 //  Created by Alexandr Goncharov on 07/06/2019.
 //
-
+#if !os(watchOS)
 import Foundation
 
 /// Connects a LottieTextProvider to a group of text layers
@@ -38,3 +38,4 @@ final class LayerTextProvider {
     }
   }
 }
+#endif

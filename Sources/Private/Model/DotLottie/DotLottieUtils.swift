@@ -4,7 +4,7 @@
 //
 // Created by Evandro Harrison Hoffmann on 27/06/2020.
 //
-
+#if !os(watchOS)
 import Foundation
 
 // MARK: - DotLottieUtils
@@ -56,3 +56,4 @@ public enum DotLottieError: Error {
   case invalidData
   case animationNotAvailable
 }
+#endif

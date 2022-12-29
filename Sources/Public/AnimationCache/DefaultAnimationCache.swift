@@ -4,7 +4,7 @@
 //
 //  Created by Marcelo Fabri on 10/18/22.
 //
-
+#if !os(watchOS)
 import Foundation
 
 /// A thread-safe Animation Cache that will store animations up to `cacheSize`.
@@ -52,3 +52,4 @@ public class DefaultAnimationCache: AnimationCacheProvider {
 
   private var cache = NSCache<NSString, LottieAnimation>()
 }
+#endif

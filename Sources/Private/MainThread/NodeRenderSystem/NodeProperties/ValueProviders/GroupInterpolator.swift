@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/22/19.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 import Foundation
 
@@ -37,3 +37,4 @@ final class GroupInterpolator<ValueType>: ValueProvider where ValueType: Interpo
     return updated != nil
   }
 }
+#endif

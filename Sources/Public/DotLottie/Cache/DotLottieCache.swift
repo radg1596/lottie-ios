@@ -4,7 +4,7 @@
 //
 //  Created by Evandro Hoffmann on 20/10/22.
 //
-
+#if !os(watchOS)
 import Foundation
 
 /// A DotLottie Cache that will store lottie files up to `cacheSize`.
@@ -51,3 +51,4 @@ public class DotLottieCache: DotLottieCacheProvider {
   private var cache = NSCache<NSString, DotLottieFile>()
 
 }
+#endif

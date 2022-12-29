@@ -1,6 +1,6 @@
 // Created by Cal Stephens on 12/21/21.
 // Copyright © 2021 Airbnb Inc. All rights reserved.
-
+#if !os(watchOS)
 /// The CALayer type responsible for only rendering the `transform` of a `LayerModel`
 final class TransformLayer: BaseCompositionLayer {
 
@@ -9,3 +9,4 @@ final class TransformLayer: BaseCompositionLayer {
   override var renderLayerContents: Bool { false }
 
 }
+#endif

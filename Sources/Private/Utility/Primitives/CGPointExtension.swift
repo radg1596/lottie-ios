@@ -4,7 +4,7 @@
 //
 //  Created by Marcelo Fabri on 5/5/22.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 
 extension CGPoint: AnyInitializable {
@@ -33,3 +33,4 @@ extension CGPoint: AnyInitializable {
     case y
   }
 }
+#endif

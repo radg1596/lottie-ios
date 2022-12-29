@@ -6,12 +6,13 @@
 //
 
 import Foundation
-#if os(iOS) || os(tvOS) || os(watchOS) || targetEnvironment(macCatalyst)
+#if os(iOS) || os(tvOS) || targetEnvironment(macCatalyst)
 import UIKit
 #elseif os(macOS)
 import AppKit
 #endif
 
+#if !os(watchOS)
 // MARK: - DotLottieImageProvider
 
 /// An image provider that loads the images from a DotLottieFile into memory
@@ -52,7 +53,7 @@ class DotLottieImageProvider: AnimationImageProvider {
 
   private func loadImages() {
     filepath.urls.forEach {
-      #if os(iOS) || os(tvOS) || os(watchOS) || targetEnvironment(macCatalyst)
+      #if os(iOS) || os(tvOS) || targetEnvironment(macCatalyst)
       if
         let data = try? Data(contentsOf: $0),
         let image = UIImage(data: data)?.cgImage
@@ -71,3 +72,4 @@ class DotLottieImageProvider: AnimationImageProvider {
   }
 
 }
+#endif

@@ -1,6 +1,6 @@
 // Created by Cal Stephens on 1/24/22.
 // Copyright © 2022 Airbnb Inc. All rights reserved.
-
+#if !os(watchOS)
 import CoreGraphics
 
 // MARK: - Interpolatable
@@ -251,3 +251,4 @@ extension Array: Interpolatable, AnyInterpolatable where Element: Interpolatable
     }
   }
 }
+#endif

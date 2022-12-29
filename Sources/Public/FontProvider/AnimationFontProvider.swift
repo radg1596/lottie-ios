@@ -5,7 +5,7 @@
 //  Created by Brandon Withrow on 8/5/20.
 //  Copyright © 2020 YurtvilleProds. All rights reserved.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 import CoreText
 import Foundation
@@ -33,3 +33,4 @@ public final class DefaultFontProvider: AnimationFontProvider {
     CTFontCreateWithName(family as CFString, size, nil)
   }
 }
+#endif

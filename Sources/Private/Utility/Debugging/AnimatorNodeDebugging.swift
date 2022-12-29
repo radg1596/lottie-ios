@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/18/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 extension AnimatorNode {
@@ -23,3 +23,4 @@ extension AnimatorNode {
   }
 
 }
+#endif

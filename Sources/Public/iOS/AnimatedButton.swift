@@ -6,7 +6,7 @@
 //
 
 import Foundation
-#if os(iOS) || os(tvOS) || os(watchOS) || targetEnvironment(macCatalyst)
+#if os(iOS) || os(tvOS) || targetEnvironment(macCatalyst)
 import UIKit
 /// An interactive button that plays an animation when pressed.
 open class AnimatedButton: AnimatedControl {

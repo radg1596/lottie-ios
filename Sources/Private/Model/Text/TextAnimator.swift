@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/9/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 final class TextAnimator: Codable, DictionaryInitializable {
@@ -162,3 +162,4 @@ final class TextAnimator: Codable, DictionaryInitializable {
     case opacity = "o"
   }
 }
+#endif

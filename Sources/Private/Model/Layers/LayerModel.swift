@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/7/19.
 //
-
+##if !os(watchOS)
 import Foundation
 
 // MARK: - LayerType + ClassFamily
@@ -226,3 +226,4 @@ extension Array where Element == LayerModel {
     }
   }
 }
+#endif
