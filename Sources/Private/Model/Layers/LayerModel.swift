@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/7/19.
 //
-##if !os(watchOS)
+#if !os(watchOS)
 import Foundation
 
 // MARK: - LayerType + ClassFamily
