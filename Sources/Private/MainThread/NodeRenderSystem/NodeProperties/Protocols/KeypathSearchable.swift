@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 2/4/19.
 //
-
+#if !os(watchOS)
 import Foundation
 import QuartzCore
 
@@ -22,3 +22,4 @@ protocol KeypathSearchable {
 
   var keypathLayer: CALayer? { get }
 }
+#endif

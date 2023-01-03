@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/9/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 /// A model that holds a vector character
@@ -94,3 +94,4 @@ final class Glyph: Codable, DictionaryInitializable {
     case shapes
   }
 }
+#endif

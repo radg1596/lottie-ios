@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/7/19.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 import Foundation
 import QuartzCore
@@ -339,3 +339,4 @@ extension CATransform3D {
     CATransform3DConcat(CATransform3D.makeSkew(skew: skew, skewAxis: skewAxis), self)
   }
 }
+#endif

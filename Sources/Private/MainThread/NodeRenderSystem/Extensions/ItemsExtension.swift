@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/18/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 // MARK: - NodeTree
@@ -105,3 +105,4 @@ extension Array where Element == ShapeItem {
     return nodeTree
   }
 }
+#endif

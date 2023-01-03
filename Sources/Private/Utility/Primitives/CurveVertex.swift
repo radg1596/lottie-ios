@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/11/19.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 import Foundation
 
@@ -182,3 +182,4 @@ struct CurveVertex {
     return distance
   }
 }
+#endif

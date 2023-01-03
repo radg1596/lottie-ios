@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/8/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 // MARK: - StarType
@@ -129,3 +129,4 @@ final class Star: ShapeItem {
     case starType = "sy"
   }
 }
+#endif

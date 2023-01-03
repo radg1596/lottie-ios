@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 2/1/19.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 import Foundation
 import QuartzCore
@@ -89,3 +89,4 @@ class AnimationCompletionDelegate: NSObject, CAAnimationDelegate {
 
   let completionBlock: LottieCompletionBlock?
 }
+#endif

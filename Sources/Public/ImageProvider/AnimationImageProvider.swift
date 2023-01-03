@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/25/19.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 import Foundation
 
@@ -19,3 +19,4 @@ import Foundation
 public protocol AnimationImageProvider {
   func imageForAsset(asset: ImageAsset) -> CGImage?
 }
+#endif

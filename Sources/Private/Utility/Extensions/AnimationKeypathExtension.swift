@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 2/4/19.
 //
-
+#if !os(watchOS)
 import Foundation
 import QuartzCore
 
@@ -264,3 +264,4 @@ enum KeyType {
   case wildcard
   case fuzzyWildcard
 }
+#endif

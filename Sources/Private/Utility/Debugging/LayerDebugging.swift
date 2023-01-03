@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/24/19.
 //
-
+#if !os(watchOS)
 import Foundation
 import QuartzCore
 
@@ -219,3 +219,4 @@ extension Array where Element == LayerModel {
   }
 
 }
+#endif

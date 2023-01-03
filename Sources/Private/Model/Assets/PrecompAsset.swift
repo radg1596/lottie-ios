@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/9/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 final class PrecompAsset: Asset {
@@ -38,3 +38,4 @@ final class PrecompAsset: Asset {
     try container.encode(layers, forKey: .layers)
   }
 }
+#endif

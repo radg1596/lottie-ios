@@ -4,7 +4,7 @@
 //
 //  Created by JT Bergman on 6/20/22.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 import Foundation
 
@@ -57,3 +57,4 @@ extension KeyframeGroup where T == LottieVector1D {
     return output
   }
 }
+#endif

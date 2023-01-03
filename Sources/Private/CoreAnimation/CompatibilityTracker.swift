@@ -2,7 +2,7 @@
 // Copyright © 2022 Airbnb Inc. All rights reserved.
 
 // MARK: - CompatibilityIssue
-
+#if !os(watchOS)
 /// A compatibility issue that was encountered while setting up an animation with the Core Animation engine
 struct CompatibilityIssue: CustomStringConvertible {
   let message: String
@@ -128,3 +128,4 @@ extension LayerAnimationContext: CompatibilityTrackerProviding {
     currentKeypath.fullPath
   }
 }
+#endif

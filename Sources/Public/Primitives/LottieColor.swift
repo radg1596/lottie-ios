@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 2/4/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 // MARK: - ColorFormatDenominator
@@ -43,3 +43,4 @@ public struct LottieColor: Hashable {
   }
 
 }
+#endif

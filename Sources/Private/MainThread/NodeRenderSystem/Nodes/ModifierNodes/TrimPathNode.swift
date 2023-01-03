@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/23/19.
 //
-
+#if !os(watchOS)
 import Foundation
 import QuartzCore
 
@@ -276,3 +276,4 @@ final class TrimPathNode: AnimatorNode {
 
   fileprivate let upstreamPaths: [PathOutputNode]
 }
+#endif

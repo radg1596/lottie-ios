@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/22/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 // MARK: - DashElementType
@@ -42,3 +42,4 @@ final class DashElement: Codable, DictionaryInitializable {
   let value: KeyframeGroup<LottieVector1D>
 
 }
+#endif

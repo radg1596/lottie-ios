@@ -4,7 +4,7 @@
 //
 //  Created by Evandro Hoffmann on 20/10/22.
 //
-
+#if !os(watchOS)
 import Foundation
 
 /// `DotLottieCacheProvider` is a protocol that describes a DotLottie Cache.
@@ -21,3 +21,4 @@ public protocol DotLottieCacheProvider {
   func clearCache()
 
 }
+#endif

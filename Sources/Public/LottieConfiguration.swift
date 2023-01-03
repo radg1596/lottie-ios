@@ -1,6 +1,7 @@
 // Created by Cal Stephens on 12/13/21.
 // Copyright © 2021 Airbnb Inc. All rights reserved.
 
+#if !os(watchOS)
 import QuartzCore
 
 // MARK: - LottieConfiguration
@@ -166,3 +167,4 @@ public enum DecodingStrategy: Hashable {
   /// it's the default as of Lottie 4.x.
   case dictionaryBased
 }
+#endif

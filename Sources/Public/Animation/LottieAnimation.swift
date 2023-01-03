@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/7/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 // MARK: - CoordinateSpace
@@ -158,3 +158,4 @@ public final class LottieAnimation: Codable, DictionaryInitializable {
   let markers: [Marker]?
   let markerMap: [String: Marker]?
 }
+#endif

@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/7/19.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 import Foundation
 
@@ -111,3 +111,4 @@ extension KeyframeData: DictionaryInitializable where T: AnyInitializable {
       spatialOutTangent: spatialOutTangent)
   }
 }
+#endif

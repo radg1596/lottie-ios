@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/22/19.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 import Foundation
 
@@ -56,3 +56,4 @@ final class ShapeCompositionLayer: CompositionLayer {
   }
 
 }
+#endif

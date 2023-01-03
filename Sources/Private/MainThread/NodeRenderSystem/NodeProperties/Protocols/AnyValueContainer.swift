@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/30/19.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 import Foundation
 
@@ -24,3 +24,4 @@ protocol AnyValueContainer: AnyObject {
   var lastUpdateFrame: CGFloat { get }
 
 }
+#endif

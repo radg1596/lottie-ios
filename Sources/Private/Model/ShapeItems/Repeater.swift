@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/8/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 final class Repeater: ShapeItem {
@@ -138,3 +138,4 @@ final class Repeater: ShapeItem {
     case scale = "s"
   }
 }
+#endif

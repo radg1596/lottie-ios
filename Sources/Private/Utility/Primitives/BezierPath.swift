@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/8/19.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 import Foundation
 
@@ -485,3 +485,4 @@ extension BezierPath {
   }
 
 }
+#endif

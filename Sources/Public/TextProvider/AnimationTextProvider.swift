@@ -4,7 +4,7 @@
 //
 //  Created by Alexandr Goncharov on 07/06/2019.
 //
-
+#if !os(watchOS)
 import Foundation
 
 // MARK: - AnimationTextProvider
@@ -51,3 +51,4 @@ public final class DefaultTextProvider: AnimationTextProvider {
     sourceText
   }
 }
+#endif

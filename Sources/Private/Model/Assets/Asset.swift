@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/9/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 public class Asset: Codable, DictionaryInitializable {
@@ -41,3 +41,4 @@ public class Asset: Codable, DictionaryInitializable {
     case id
   }
 }
+#endif

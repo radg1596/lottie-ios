@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/25/19.
 //
-
+#if !os(watchOS)
 import Foundation
 import QuartzCore
 
@@ -119,3 +119,4 @@ final class PreCompositionLayer: CompositionLayer {
 
   fileprivate var animationLayers: [CompositionLayer]
 }
+#endif

@@ -4,7 +4,7 @@
 //
 // Created by Evandro Harrison Hoffmann on 27/06/2020.
 //
-
+#if !os(watchOS)
 import Foundation
 
 // MARK: - DotLottieFile
@@ -159,3 +159,4 @@ extension String {
     (self as NSString).deletingPathExtension
   }
 }
+#endif

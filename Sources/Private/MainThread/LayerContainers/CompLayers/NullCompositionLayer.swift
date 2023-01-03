@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/25/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 final class NullCompositionLayer: CompositionLayer {
@@ -26,3 +26,4 @@ final class NullCompositionLayer: CompositionLayer {
   }
 
 }
+#endif

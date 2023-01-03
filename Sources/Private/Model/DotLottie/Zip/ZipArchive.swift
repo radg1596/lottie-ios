@@ -7,7 +7,7 @@
 //
 //  See https://github.com/weichsel/ZIPFoundation/blob/master/LICENSE for license information.
 //
-
+#if !os(watchOS)
 import Foundation
 
 // MARK: - ZipArchive
@@ -472,3 +472,4 @@ extension ZipArchive.EndOfCentralDirectoryRecord {
   }
 
 }
+#endif

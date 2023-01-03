@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/9/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 // MARK: - TextJustification
@@ -121,3 +121,4 @@ final class TextDocument: Codable, DictionaryInitializable, AnyInitializable {
     case textFrameSize = "sz"
   }
 }
+#endif

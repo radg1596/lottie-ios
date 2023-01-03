@@ -3,6 +3,7 @@ import Foundation
 import UIKit
 #endif
 
+#if !os(watchOS)
 extension Bundle {
   func getAnimationData(_ name: String, subdirectory: String? = nil) throws -> Data? {
     // Check for files in the bundle at the given path
@@ -12,7 +13,7 @@ extension Bundle {
     }
 
     // Check for data assets (not available on macOS)
-    #if os(iOS) || os(tvOS) || os(watchOS) || targetEnvironment(macCatalyst)
+    #if os(iOS) || os(tvOS)  || targetEnvironment(macCatalyst)
     let assetKey = subdirectory != nil ? "\(subdirectory ?? "")/\(name)" : name
     return NSDataAsset(name: assetKey, bundle: self)?.data
     #else
@@ -28,7 +29,7 @@ extension Bundle {
     }
 
     // Check for data assets (not available on macOS)
-    #if os(iOS) || os(tvOS) || os(watchOS) || targetEnvironment(macCatalyst)
+    #if os(iOS) || os(tvOS) || targetEnvironment(macCatalyst)
     let assetKey = subdirectory != nil ? "\(subdirectory ?? "")/\(name)" : name
     return NSDataAsset(name: assetKey, bundle: self)?.data
     #else
@@ -58,3 +59,4 @@ extension String {
     return (self as NSString).deletingPathExtension
   }
 }
+#endif

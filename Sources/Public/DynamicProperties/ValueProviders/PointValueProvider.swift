@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 2/4/19.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 import Foundation
 /// A `ValueProvider` that returns a CGPoint Value
@@ -67,3 +67,4 @@ public final class PointValueProvider: ValueProvider {
 
   private var block: PointValueBlock?
 }
+#endif

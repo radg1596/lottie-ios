@@ -5,7 +5,7 @@
 //  Created by Brandon Withrow on 2/6/19.
 //
 
-#if os(iOS) || os(tvOS) || os(watchOS) || targetEnvironment(macCatalyst)
+#if os(iOS) || os(tvOS) || targetEnvironment(macCatalyst)
 import UIKit
 
 /// The base view for `LottieAnimationView` on iOS, tvOS, watchOS, and macCatalyst.

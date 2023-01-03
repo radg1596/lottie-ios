@@ -1,6 +1,6 @@
 // Created by Cal Stephens on 8/1/22.
 // Copyright © 2022 Airbnb Inc. All rights reserved.
-
+#if !os(watchOS)
 import QuartzCore
 
 // MARK: - RepeaterLayer
@@ -83,3 +83,4 @@ extension RepeaterTransform: TransformModel {
   var _positionX: KeyframeGroup<LottieVector1D>? { nil }
   var _positionY: KeyframeGroup<LottieVector1D>? { nil }
 }
+#endif

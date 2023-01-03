@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/30/19.
 //
-
+#if !os(watchOS)
 import Foundation
 import QuartzCore
 
@@ -41,3 +41,4 @@ final class SingleValueProvider<ValueType: AnyInterpolatable>: ValueProvider {
 
   private var hasUpdate = true
 }
+#endif

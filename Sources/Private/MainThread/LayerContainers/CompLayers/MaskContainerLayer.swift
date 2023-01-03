@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/25/19.
 //
-
+#if !os(watchOS)
 import Foundation
 import QuartzCore
 
@@ -187,3 +187,4 @@ private class MaskNodeProperties: NodePropertyMap {
   let shape: NodeProperty<BezierPath>
   let expansion: NodeProperty<LottieVector1D>
 }
+#endif

@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/16/19.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 import Foundation
 
@@ -72,3 +72,4 @@ final class ShapeNode: AnimatorNode, PathNode {
   }
 
 }
+#endif

@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/15/19.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 import Foundation
 
@@ -248,3 +248,4 @@ extension ContiguousArray {
   }
 
 }
+#endif

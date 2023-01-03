@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/14/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 // MARK: - KeyframeGroup
@@ -227,3 +227,4 @@ extension KeyframeGroup: AnyKeyframeGroup where T: AnyInterpolatable {
     KeyframeInterpolator(keyframes: keyframes)
   }
 }
+#endif

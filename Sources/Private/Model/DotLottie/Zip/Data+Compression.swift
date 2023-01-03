@@ -14,6 +14,7 @@ import Foundation
 import zlib
 #endif
 
+#if !os(watchOS)
 /// A custom handler that consumes a `Data` object containing partial entry data.
 /// - Parameters:
 ///   - data: A chunk of `Data` to consume.
@@ -132,3 +133,4 @@ extension compression_stream {
     return sourceData.count
   }
 }
+#endif

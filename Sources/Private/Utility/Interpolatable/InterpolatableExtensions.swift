@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/14/19.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 import Foundation
 
@@ -132,3 +132,4 @@ extension TextDocument: Interpolatable {
     return self
   }
 }
+#endif

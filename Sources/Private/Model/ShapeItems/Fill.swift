@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/8/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 // MARK: - FillRule
@@ -72,3 +72,4 @@ final class Fill: ShapeItem {
     case fillRule = "r"
   }
 }
+#endif

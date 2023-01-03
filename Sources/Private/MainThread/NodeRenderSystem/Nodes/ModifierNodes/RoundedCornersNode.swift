@@ -4,7 +4,7 @@
 //
 //  Created by Duolingo on 10/31/22.
 //
-
+#if !os(watchOS)
 import Foundation
 import QuartzCore
 
@@ -83,3 +83,4 @@ final class RoundedCornersNode: AnimatorNode {
 
   fileprivate let upstreamPaths: [PathOutputNode]
 }
+#endif

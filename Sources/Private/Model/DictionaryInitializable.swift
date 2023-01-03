@@ -4,7 +4,7 @@
 //
 //  Created by Marcelo Fabri on 5/5/22.
 //
-
+#if !os(watchOS)
 import Foundation
 
 // MARK: - InitializableError
@@ -65,3 +65,4 @@ extension Array: AnyInitializable where Element == Double {
   }
 
 }
+#endif

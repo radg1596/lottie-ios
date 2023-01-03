@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/8/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 final class ShapeTransform: ShapeItem {
@@ -139,3 +139,4 @@ final class ShapeTransform: ShapeItem {
     case skewAxis = "sa"
   }
 }
+#endif

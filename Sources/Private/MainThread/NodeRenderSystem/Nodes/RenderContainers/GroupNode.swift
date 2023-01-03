@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/18/19.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 import Foundation
 import QuartzCore
@@ -153,3 +153,4 @@ final class GroupNode: AnimatorNode {
   }
 
 }
+#endif

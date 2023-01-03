@@ -7,7 +7,7 @@
 //
 //  See https://github.com/weichsel/ZIPFoundation/blob/master/LICENSE for license information.
 //
-
+#if !os(watchOS)
 import CoreFoundation
 import Foundation
 
@@ -225,3 +225,4 @@ extension ZipEntry.CentralDirectoryStructure {
     return UInt64(relativeOffsetOfLocalHeader)
   }
 }
+#endif

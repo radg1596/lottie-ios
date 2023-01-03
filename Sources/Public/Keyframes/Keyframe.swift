@@ -2,7 +2,7 @@
 // Copyright © 2022 Airbnb Inc. All rights reserved.
 
 // MARK: - Keyframe
-
+#if !os(watchOS)
 /// A keyframe with a single value, and timing information
 /// about when the value should be displayed and how it
 /// should be interpolated.
@@ -90,3 +90,4 @@ extension Keyframe: Hashable where T: Hashable {
     hasher.combine(spatialOutTangent)
   }
 }
+#endif

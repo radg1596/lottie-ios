@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/8/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 final class Stroke: ShapeItem {
@@ -134,3 +134,4 @@ final class Stroke: ShapeItem {
     case dashPattern = "d"
   }
 }
+#endif

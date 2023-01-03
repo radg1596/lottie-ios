@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 2/6/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 extension LottieAnimationView {
@@ -220,3 +220,4 @@ extension LottieAnimationView {
 enum LottieDownloadError: Error {
   case downloadFailed
 }
+#endif

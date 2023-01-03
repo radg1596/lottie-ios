@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 2/5/19.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 import Foundation
 
@@ -315,3 +315,4 @@ extension LottieAnimation {
 /// include any runtime component. Multiple modules in the same package graph can provide this
 /// conformance without causing any conflicts.
 extension Foundation.Bundle: @unchecked Sendable { }
+#endif

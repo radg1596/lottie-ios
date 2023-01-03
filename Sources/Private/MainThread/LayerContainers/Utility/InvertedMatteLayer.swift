@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/28/19.
 //
-
+#if !os(watchOS)
 import Foundation
 import QuartzCore
 
@@ -55,3 +55,4 @@ final class InvertedMatteLayer: CALayer, CompositionLayerDelegate {
   }
 
 }
+#endif

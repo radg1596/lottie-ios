@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 1/8/19.
 //
-
+#if !os(watchOS)
 import Foundation
 
 // MARK: - TrimType
@@ -83,3 +83,4 @@ final class Trim: ShapeItem {
     case trimType = "m"
   }
 }
+#endif

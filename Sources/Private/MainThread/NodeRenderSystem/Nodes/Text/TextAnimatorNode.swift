@@ -4,7 +4,7 @@
 //
 //  Created by Brandon Withrow on 2/19/19.
 //
-
+#if !os(watchOS)
 import CoreGraphics
 import Foundation
 import QuartzCore
@@ -268,3 +268,4 @@ class TextAnimatorNode: AnimatorNode {
     textOutputNode.strokeWidth = textAnimatorProperties.strokeWidth?.value.cgFloatValue ?? 0
   }
 }
+#endif
